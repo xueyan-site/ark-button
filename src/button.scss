@@ -1,0 +1,116 @@
+.xrbutton {
+  width: fit-content;
+  height: 32px;
+  padding: 0 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--font);
+  border: 1px solid var(--area2);
+  background-color: var(--base1);
+  &:hover {
+    border-color: var(--area3);
+  }
+  &:active {
+    color: var(--font1);
+    border-color: var(--area1);
+  }
+  &.disabled {
+    color: var(--font2);
+    border-color: var(--area1);
+    background-color: var(--area1);
+    cursor: not-allowed;
+  }
+}
+.xrbutton.main {
+  color: var(--main);
+  border-color: var(--main3);
+  background-color: var(--main1);
+  &:hover {
+    border-color: var(--main4);
+  }
+  &:active {
+    color: var(--main5);
+    border-color: var(--main2);
+  }
+  &.disabled {
+    color: var(--main4);
+    border-color: var(--main2);
+    background-color: var(--main2);
+  }
+}
+.xrbutton.red {
+  color: var(--red);
+  border-color: var(--red3);
+  background-color: var(--red1);
+  &:hover {
+    border-color: var(--red4);
+  }
+  &:active {
+    color: var(--red5);
+    border-color: var(--red2);
+  }
+  &.disabled {
+    color: var(--red4);
+    border-color: var(--red2);
+    background-color: var(--red2);
+  }
+}
+.xrbutton.orange {
+  color: var(--orange);
+  border-color: var(--orange3);
+  background-color: var(--orange1);
+  &:hover {
+    border-color: var(--orange4);
+  }
+  &:active {
+    color: var(--orange5);
+    border-color: var(--orange2);
+  }
+  &.disabled {
+    color: var(--orange4);
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+  }
+}
+.xrbutton.blue {
+  color: var(--blue);
+  border-color: var(--blue3);
+  background-color: var(--blue1);
+  &:hover {
+    border-color: var(--blue4);
+  }
+  &:active {
+    color: var(--blue5);
+    border-color: var(--blue2);
+  }
+  &.disabled {
+    color: var(--blue4);
+    border-color: var(--blue2);
+    background-color: var(--blue2);
+  }
+}
+.xrbutton.green {
+  color: var(--green);
+  border-color: var(--green3);
+  background-color: var(--green1);
+  &:hover {
+    border-color: var(--green4);
+  }
+  &:active {
+    color: var(--green5);
+    border-color: var(--green2);
+  }
+  &.disabled {
+    color: var(--green4);
+    border-color: var(--green2);
+    background-color: var(--green2);
+  }
+}

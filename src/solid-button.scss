@@ -1,0 +1,81 @@
+.xrsolidbutton {
+  width: fit-content;
+  height: 32px;
+  padding: 0 9px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  color: var(--font);
+  background-color: var(--area2);
+  &:active {
+    background-color: var(--area1);
+  }
+  &.disabled {
+    color: var(--font2);
+    background-color: var(--area1);
+    cursor: not-allowed;
+  }
+}
+.xrsolidbutton.main {
+  color: var(--white);
+  background-color: var(--main);
+  &:active {
+    background-color: var(--main5);
+  }
+  &.disabled {
+    color: var(--white5);
+    background-color: var(--main5);
+  }
+}
+.xrsolidbutton.red {
+  color: var(--white);
+  background-color: var(--red);
+  &:active {
+    background-color: var(--red5);
+  }
+  &.disabled {
+    color: var(--white5);
+    background-color: var(--red5);
+  }
+}
+.xrsolidbutton.orange {
+  color: var(--white);
+  background-color: var(--orange);
+  &:active {
+    background-color: var(--orange5);
+  }
+  &.disabled {
+    color: var(--white5);
+    background-color: var(--orange5);
+  }
+}
+.xrsolidbutton.blue {
+  color: var(--white);
+  background-color: var(--blue);
+  &:active {
+    background-color: var(--blue5);
+  }
+  &.disabled {
+    color: var(--white5);
+    background-color: var(--blue5);
+  }
+}
+.xrsolidbutton.green {
+  color: var(--white);
+  background-color: var(--green);
+  &:active {
+    background-color: var(--green5);
+  }
+  &.disabled {
+    color: var(--white5);
+    background-color: var(--green5);
+  }
+}
