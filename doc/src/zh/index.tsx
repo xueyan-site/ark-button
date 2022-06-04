@@ -2,17 +2,52 @@ import React from 'react'
 import { PageDoc } from 'com/page-doc'
 import pkg from '../../../package.json'
 import type { PageProps } from 'xueyan-react'
-import type { DocumentInfo } from 'xueyan-react-doc'
+import type { Collection } from 'xueyan-react-doc'
+import { 
+  ConfigIcon,
+  InterfaceIcon,
+  ConstIcon,
+  ClassIcon,
+  HookFunctionIcon,
+  ComponentIcon,
+  FunctionIcon
+} from 'xueyan-react-icon'
 
-const DOCUMENTS: DocumentInfo<string,string>[] = [
+const INTERFACE_ICON = <InterfaceIcon color="var(--pink)"/>
+const CONFIG_ICON = <ConfigIcon color="var(--indigo)"/>
+const CONST_ICON = <ConstIcon color="var(--teal)"/>
+const FUNCTION_ICON = <FunctionIcon color="var(--orange)" />
+const CLASS_ICON = <ClassIcon color="var(--red)" />
+const HOOK_ICON = <HookFunctionIcon color="var(--green)" />
+const COMPONENT_ICON = <ComponentIcon color="var(--blue)" />
+
+const COLLECTIONS: Collection<string,string>[] = [
   {
-    value: '1',
-    label: '集一',
+    value: '9999',
+    label: '指南',
     contents: [
       {
-        value: '1-1',
-        label: '章一 介绍',
+        value: '0001',
+        label: '介绍',
         content: () => import('./0001')
+      }
+    ]
+  },
+  {
+    value: '9998',
+    label: '接口文档',
+    contents: [
+      {
+        value: '0002',
+        label: 'Button',
+        icon: COMPONENT_ICON,
+        content: () => import('./0002')
+      },
+      {
+        value: '0003',
+        label: 'SolidButton',
+        icon: COMPONENT_ICON,
+        content: () => import('./0003')
       }
     ]
   }
@@ -24,7 +59,7 @@ export default function Index(props: PageProps) {
       {...props}
       language="zh"
       version={pkg.version}
-      documents={DOCUMENTS}
+      collections={COLLECTIONS}
       name={pkg.name}
       description={pkg.description}
     />

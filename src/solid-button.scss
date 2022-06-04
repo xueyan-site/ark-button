@@ -1,12 +1,13 @@
 .xrsolidbutton {
   width: fit-content;
-  height: 32px;
+  min-height: 32px;
   padding: 0 9px;
   cursor: pointer;
   box-sizing: border-box;
   display: inline-flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
   position: relative;
   font-size: 14px;
   line-height: 1.5;

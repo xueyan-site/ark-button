@@ -9,7 +9,5 @@ export type {
   ButtonRef
 } from './button'
 export type {
-  SolidButtonOnClick,
-  SolidButtonProps,
-  SolidButtonRef
+  SolidButtonProps
 } from './solid-button'

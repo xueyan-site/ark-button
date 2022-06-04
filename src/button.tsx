@@ -6,6 +6,14 @@ export type ButtonOnClick = (
   event: React.MouseEvent<HTMLButtonElement, MouseEvent>
 ) => void
 
+export type ButtonColor =
+  | 'none'
+  | 'main' 
+  | 'red' 
+  | 'orange' 
+  | 'blue' 
+  | 'green' 
+
 export interface ButtonProps {
   /** 类名 */
   className?: string
@@ -13,10 +21,10 @@ export interface ButtonProps {
   style?: React.CSSProperties
   /** 开关状态 */
   children?: React.ReactNode
-  /** 按钮颜色 */
-  color?: 'main' | 'red' | 'orange' | 'blue' | 'green' | 'none'
   /** 禁用 */
   disabled?: boolean
+  /** 按钮颜色 */
+  color?: ButtonColor
   /** 更改开关状态 */
   onClick?: ButtonOnClick
 }

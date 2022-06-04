@@ -1,30 +1,9 @@
 import React, { forwardRef, useRef, useImperativeHandle } from 'react'
 import cn from 'classnames'
 import styles from './solid-button.scss'
+import { ButtonProps, ButtonRef } from './button'
 
-export type SolidButtonOnClick = (
-  event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-) => void
-
-export interface SolidButtonProps {
-  /** 类名 */
-  className?: string
-  /** 样式 */
-  style?: React.CSSProperties
-  /** 开关状态 */
-  children?: React.ReactNode
-  /** 按钮颜色 */
-  color?: 'main' | 'red' | 'orange' | 'blue' | 'green' | 'none'
-  /** 禁用 */
-  disabled?: boolean
-  /** 更改开关状态 */
-  onClick?: SolidButtonOnClick
-}
-
-export interface SolidButtonRef {
-  /** 根节点 */
-  rootNode: HTMLButtonElement | null
-}
+export interface SolidButtonProps extends ButtonProps {}
 
 const BUTTON_COLORS: Record<string, string> = {
   main: styles.main,
@@ -34,7 +13,7 @@ const BUTTON_COLORS: Record<string, string> = {
   green: styles.green,
 }
 
-export const SolidButton = forwardRef<SolidButtonRef, SolidButtonProps>(({
+export const SolidButton = forwardRef<ButtonRef, SolidButtonProps>(({
   className,
   style,
   children,
