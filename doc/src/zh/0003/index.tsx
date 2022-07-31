@@ -1,7 +1,7 @@
 import React from 'react'
 import { Article, Segment } from 'xueyan-react-markdown'
 import { Playground } from 'xueyan-react-playground'
-import { SolidButton } from 'xueyan-react-button'
+import { SolidButton } from 'ark-button'
 
 const MARK1 = `
 实心按钮组件（无边框）
@@ -19,7 +19,7 @@ type SolidButton = React.ForwardRefExoticComponent<
 
 const CODE1 = `
 import React from 'react'
-import { SolidButton } from 'xueyan-react-button'
+import { SolidButton } from 'ark-button'
 
 export default function Example() {
   return (

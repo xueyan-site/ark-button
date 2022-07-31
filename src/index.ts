@@ -1,4 +1,4 @@
-import 'xueyan-react-style'
+import 'solor'
 
 export { Button } from './button'
 export { SolidButton } from './solid-button'

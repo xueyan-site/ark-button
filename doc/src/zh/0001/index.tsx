@@ -1,7 +1,7 @@
 import React from 'react'
 import { Article, Segment } from 'xueyan-react-markdown'
 import { Playground } from 'xueyan-react-playground'
-import { Button, SolidButton } from 'xueyan-react-button'
+import { Button, SolidButton } from 'ark-button'
 
 const MARK1 = `
 按钮组件库
@@ -11,7 +11,7 @@ const MARK1 = `
 
 const CODE1 = `
 import React from 'react'
-import { Button } from 'xueyan-react-button'
+import { Button } from 'ark-button'
 
 export default function Example() {
   return (

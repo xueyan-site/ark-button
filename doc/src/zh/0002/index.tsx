@@ -1,7 +1,7 @@
 import React from 'react'
 import { Article, Segment } from 'xueyan-react-markdown'
 import { Playground } from 'xueyan-react-playground'
-import { Button } from 'xueyan-react-button'
+import { Button } from 'ark-button'
 
 const MARK1 = `
 基础按钮组件
@@ -17,7 +17,7 @@ type Button = React.ForwardRefExoticComponent<
 
 const CODE1 = `
 import React from 'react'
-import { Button } from 'xueyan-react-button'
+import { Button } from 'ark-button'
 
 export default function Example() {
   return (
