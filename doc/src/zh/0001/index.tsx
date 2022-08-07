@@ -1,6 +1,6 @@
 import React from 'react'
-import { Article, Segment } from 'xueyan-react-markdown'
-import { Playground } from 'xueyan-react-playground'
+import { Article, Segment } from 'ark-markdown'
+import { Playground } from 'ark-playground'
 import { Button, SolidButton } from 'ark-button'
 
 const MARK1 = `
